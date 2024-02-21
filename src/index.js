@@ -14,7 +14,7 @@ const app = express();
 
 app.use(express.json());
 app.use(morgan("dev"));
-app.use(cors(corsOptions));
+app.use(cors());
 
 // const middle=(req,res,next)=>{
 //   console.log(`${req.method} ${req.url}`);
